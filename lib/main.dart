@@ -26,8 +26,10 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           // primarySwatch: Colors.green,
           useMaterial3: true,
-          colorScheme:
-              ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 2, 66, 4))),
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: Colors.red,
+              primary: Colors.green,
+              secondary: Colors.amber)),
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
     );

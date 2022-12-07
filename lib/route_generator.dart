@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter/material.dart';
+import 'package:smart_task_management/Home/home.dart';
 import 'package:smart_task_management/first.dart';
 import 'package:smart_task_management/onBoading/onboarding.dart';
 
@@ -11,7 +12,7 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => OnBoardingScreen());
+        return MaterialPageRoute(builder: (_) => home());
       case '/second':
         // Validation of correct data type
         if (args is String) {
