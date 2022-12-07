@@ -11,7 +11,7 @@ class HomeAppBar extends StatelessWidget {
     return SliverAppBar(
       systemOverlayStyle:
           const SystemUiOverlayStyle(statusBarBrightness: Brightness.dark),
-      expandedHeight: 350.0,
+      expandedHeight: 316.0,
       backgroundColor: Colors.blue[800],
       elevation: 0.0,
       pinned: true,
@@ -94,8 +94,8 @@ class HomeAppBar extends StatelessWidget {
         child: Container(
           height: 32.0,
           alignment: Alignment.center,
-          decoration: const BoxDecoration(
-            color: Colors.white,
+          decoration: BoxDecoration(
+            color: Colors.grey.shade100,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(32.0),
               topRight: Radius.circular(32.0),
@@ -105,7 +105,7 @@ class HomeAppBar extends StatelessWidget {
             width: 40.0,
             height: 5.0,
             decoration: BoxDecoration(
-              color: Color(0xFFD0DBEA),
+              color: Colors.black,
               borderRadius: BorderRadius.circular(100.0),
             ),
           ),
