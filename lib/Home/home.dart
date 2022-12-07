@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:smart_task_management/Home/appbar.dart';
 import 'package:smart_task_management/Home/calenderTimeline.dart';
 
+import 'package:smart_task_management/Home/taskPanel.dart';
+
 class home extends StatefulWidget {
   const home({super.key});
 
@@ -37,16 +39,8 @@ class _homeState extends State<home> {
         backgroundColor: Colors.blue[800],
         body: CustomScrollView(slivers: <Widget>[
           const HomeAppBar(),
-          SliverFillRemaining(
-            hasScrollBody: true,
-            child: Container(
-              color: Colors.white,
-              child: Icon(
-                Icons.sentiment_very_satisfied,
-                size: 75,
-                color: Colors.blue[900],
-              ),
-            ),
+          SliverToBoxAdapter(
+            child: TaskPanel(),
           ),
         ]));
   }
